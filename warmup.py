@@ -1,13 +1,7 @@
 def staircase(n):
 
-    output = ''
-    for i in range(n):
-        for j in range(n):
-            if i < j:
-                output += ' '
-            else:
-                output += '#'
-    print(output)
+    for i in range(1, n+1):
+        print(' '*(n-i) + '#'*i)
 
 
 staircase(6)
